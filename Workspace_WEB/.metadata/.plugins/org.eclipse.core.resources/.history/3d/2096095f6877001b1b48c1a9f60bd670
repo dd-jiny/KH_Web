@@ -1,0 +1,63 @@
+package com.mvc.controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.mvc.biz.MVCBoardBiz;
+import com.mvc.biz.MVCBoardBizImpl;
+import com.mvc.dto.MVCBoardDto;
+
+
+@WebServlet("/MVCController")
+public class MVCController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+    public MVCController() {
+  
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		doPost(request, response);
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		
+		MVCBoardBiz biz = new MVCBoardBizImpl();
+		
+		String command = request.getParameter("command");
+		System.out.println("[" + command + "]");
+		
+		if(command.equals("list")) {
+			//1보내준 값이 있으면 받는다
+			//2db에 전달 (전달할 값 있으면 전달)
+			List<MVCBoardDto> list = biz.selectList();
+			//3화면에 보여줄 값이 잇으면 request 객체에 담기
+			request.setAttribute("list", list);
+			//4보내기
+			dispatch(request, response, "mvclist.jsp");
+			
+		} 
+	}
+		public void dispatch(HttpServletRequest request, HttpServletResponse response, String path) throws ServletException, IOException  {
+			//일일이 디스패치 만들기 귀찮으니 메소드로 뽑아버리기
+			RequestDispatcher dispatch = request.getRequestDispatcher(path);
+			dispatch.forward(request, response);
+			//pageContext.forward("mylist.jsp"); -> 똑같이 forward중임 
+		}
+	}
+
+

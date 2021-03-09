@@ -1,0 +1,151 @@
+package com.mvc.controller;
+
+import java.io.IOException;
+
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.mvc.biz.MVCBoardBiz;
+import com.mvc.biz.MVCBoardBizImpl;
+import com.mvc.dto.MVCBoardDto;
+
+
+@WebServlet("/MVCController")
+public class MVCController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+    public MVCController() {
+  
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		doPost(request, response);
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		
+		MVCBoardBiz biz = new MVCBoardBizImpl();
+		
+		String command = request.getParameter("command");
+		System.out.println("[" + command + "]");
+		
+		if(command.equals("list")) {
+			//1보내준 값이 있으면 받는다
+			//2db에 전달 (전달할 값 있으면 전달)
+			List<MVCBoardDto> list = biz.selectList();
+			//3화면에 보여줄 값이 잇으면 request 객체에 담기
+			request.setAttribute("list", list);
+			//4보내기
+			dispatch(request, response, "mvclist.jsp");
+			
+		} else if (command.equals("insertform")) {
+			//1
+			//2
+			//3
+			//4
+			response.sendRedirect("mvcinsert.jsp");
+		} else if (command.equals("insertres")) {
+			//1
+			String writer = request.getParameter("writer");
+			String title = request.getParameter("title");
+			String content = request.getParameter("content");
+			//2
+			MVCBoardDto dto = new MVCBoardDto(0, writer, title, content, null);
+			//파라미터 3개짜리 생성자를 미리 안만들어놨으면 에러가뜸 지금은 다섯개로 만들어 놓음
+			int res = biz.insert(dto);
+			//3
+			//4
+			if (res > 0) {
+				//request.setAttribute("list", biz.selectList());
+				//dispatch(request, response, "mylist.jsp");
+				response.sendRedirect("mvc.do?command=list");  //->request가 살아있는것을 방지 
+			}else {
+				//response.sendRedirect("myinsert.jsp");
+				response.sendRedirect("mvc.do?command=insertform");
+			}
+			
+		} else if (command.equals("selectone")) {
+				//1
+				int seq = Integer.parseInt(request.getParameter("seq"));
+				//2
+				MVCBoardDto dto = biz.selectOne(seq);
+				//3
+				request.setAttribute("dto", dto);
+				//4
+				//response.sendRedirect("myselect.jsp"); QQ
+				dispatch(request, response, "mvcselect.jsp");
+			} else if (command.equals("updateform")) {
+				//1
+				int seq = Integer.parseInt(request.getParameter("seq"));
+				//2
+				MVCBoardDto dto = biz.selectOne(seq);
+				//3
+				request.setAttribute("dto", dto);
+				//request 에 "dto"란 이름에 dto를 담아줌
+				//4
+				dispatch(request, response, "mvcupdate.jsp");
+			} else if (command.equals("updateres")) {
+				//1
+				int seq = Integer.parseInt(request.getParameter("seq"));
+				String title = request.getParameter("title");
+				String content = request.getParameter("content");
+				//2
+				/*
+				MVCBoardDto dto = new MVCBoardDto();
+				dto.setSeq(seq);
+				dto.setTitle(title);
+				dto.setContent(content);
+				int res = biz.update(dto);
+				*/
+				MVCBoardDto dto = new MVCBoardDto(seq, null, title, content, null);
+				int res = biz.update(dto);
+				//3
+				//4
+				if(res > 0) {
+					response.sendRedirect("mvc.do?command=selectone&seq="+seq);
+				} else {
+					response.sendRedirect("mvc.do?command=updateform&seq="+seq);
+					//저장해서 보여주는 느낌
+					//dispatch 저장한걸 보여주는 느낌??
+				} 
+				}else if (command.equals("delete")) {
+					//1
+					int seq = Integer.parseInt(request.getParameter("seq"));
+					//2
+					int res = biz.delete(seq);
+					//3
+					//4
+					if (res > 0) {
+						response.sendRedirect("mvc.do?command=list");
+				} else {
+					//response.sendRedirect("myservlet.do?command=selectone&seq=<%=seq%>");
+					dispatch(request, response, "mvcselect.jsp");
+				}
+			}
+		
+		
+	}
+
+	
+		public void dispatch(HttpServletRequest request, HttpServletResponse response, String path) throws ServletException, IOException  {
+			//일일이 디스패치 만들기 귀찮으니 메소드로 뽑아버리기
+			RequestDispatcher dispatch = request.getRequestDispatcher(path);
+			dispatch.forward(request, response);
+			//pageContext.forward("mylist.jsp"); -> 똑같이 forward중임 
+		}
+	}
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Jsp05_HelloServlet</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>신민아</param-value>
+  </context-param>
+  <!-- context - > 컨텍스트 전체 프로젝트전체에서 아용가능 -->
+  <!-- HelloServlet Hello = new HelloServlet(); -->
+  <servlet>
+  	<servlet-name>Hello</servlet-name>
+  	<servlet-class>com.hello.servlet.HelloServlet</servlet-class>
+  	<init-param>
+  		<param-name>sports</param-name>
+  		<param-value>무에타이</param-value>
+  	</init-param>
+  </servlet>
+  <!-- init-param 해당 servlet 실행에서 소멸 전까지 서블릿 내부에서 사용가능 -->
+	<!-- <servlet>은 객체생성 -->  
+	
+  <!-- hello.do 라는 요청이 들어오면, Hello라는 이름의 servlet에 연결 -->
+ <!--  <servlet-mapping>은 연결 -->
+  <servlet-mapping>
+  	<servlet-name>Hello</servlet-name>
+  	<url-pattern>/hello.do</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

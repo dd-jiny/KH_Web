@@ -1,0 +1,44 @@
+<%@page import="com.login.dto.MYMemberDto"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<% request.setCharacterEncoding("UTF-8"); %>
+<% response.setContentType("text/html; charset=UTF-8");%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<%
+	MYMemberDto dto = (MYMemberDto)session.getAttribute("dto");
+	
+	if (dto == null) {
+		pageContext.forward("index.html");
+	} 
+	
+%>
+<body>
+	<form>
+
+	<div>
+		<h1><%=dto.getMyid() %>님 환영합니다.</h1>
+		<a href="logincontroller.jsp?command=logout">logout</a>
+	</div>
+	
+	<div>
+		<div>
+			<a href="logincontroller.jsp?command=selectUser">정보 조회</a>
+		</div>
+		<div>
+			<a href="logincontroller.jsp?command=updateUser">정보 수정</a>
+		</div>
+		<div>
+			<a href="logincontroller.jsp?command=deleteUser">회원 탈퇴</a>
+		</div>
+	</div>
+	
+	</form>
+
+</body>
+</html>

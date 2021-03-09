@@ -1,0 +1,59 @@
+package com.mvc.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/*web의 url-pattern 이름이랑 달라야함 중복 되면 충돌*/ 
+@WebServlet("/MYServlet")
+public class MYServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+    public MYServlet() {
+
+    }
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		
+		String command = request.getParameter("command");
+		System.out.println("[" + command + "]");
+		
+		if(command.equals("list")) {
+			//1보내준 값이 있으면 받는다
+			//2db에 전달 (전달할 값 있으면 전달)
+			//3화면에 보여줄 값이 잇으면 보여줌
+			//4보낸다
+			
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

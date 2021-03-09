@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Jsp02_MDBoard/src&lt;com.muldel.dao{MDBoardDao.java[MDBoardDao" modifiers="513" timestamp="1613698510263"/>
+    <typeInfo handle="=Jsp02_MDBoard/src&lt;com.muldel.biz{MDBoardBiz.java[MDBoardBiz" modifiers="513" timestamp="1613612698446"/>
+    <typeInfo handle="=Jsp03_MVC/src&lt;com.mvc.biz{MVCBoardBiz.java[MVCBoardBiz" modifiers="513" timestamp="1613624634927"/>
+    <typeInfo handle="=Jsp03_MVC/src&lt;com.mvc.dao{MVCBoardDao.java[MVCBoardDao" modifiers="513" timestamp="1613700568571"/>
+    <typeInfo handle="=Jsp08_MVC/src&lt;com.mvc.biz{MVCBoardBiz.java[MVCBoardBiz" modifiers="513" timestamp="1614255587470"/>
+    <typeInfo handle="=Jsp08_MVC/src&lt;com.mvc.dao{MVCBoardDao.java[MVCBoardDao" modifiers="513" timestamp="1614255652946"/>
+</typeInfoHistroy>

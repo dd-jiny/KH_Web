@@ -1,0 +1,122 @@
+
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<% request.setCharacterEncoding("UTF-8"); %>
+
+<%@page import="com.login.dto.MYMemberDto" %>
+<%@page import="com.login.biz.MYMemberBiz" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+	String command = request.getParameter("command");
+	System.out.println("[" + command + "]");
+	
+	MYMemberBiz biz = new MYMemberBiz();
+	
+	if(command.equals("login")) {
+		
+		String myid = request.getParameter("myid");
+		String mypw = request.getParameter("mypw");
+		
+		MYMemberDto dto = biz.login(myid, mypw);
+		
+		if (dto != null) {
+			//side effect ... 이거 다시한번 이해해보자
+			// session scope 에 객체 담기
+			session.setAttribute("dto", dto);
+			//만료되는 시간 설정 (default: 30분)  ex) 세션이 만료되었습니다...
+			//음수일 경우,,,?
+			session.setMaxInactiveInterval(10 * 60);
+			
+			if(dto.getMyrole().equals("ADMIN")) {
+				response.sendRedirect("adminmain.jsp");
+				
+			} else if(dto.getMyrole().equals("USER")) {
+				response.sendRedirect("usermain.jsp");
+			}
+			
+			
+		} else {
+%>
+		<script type="text/javascript">
+		alert("로그인 실패");
+		location.href="index.html";
+		</script>
+<% 
+		}
+	} else if (command.equals("logout")) {
+		// sessin scope 에서 값 삭제 (만료)
+		session.invalidate();
+		response.sendRedirect("index.html");
+		
+	} else if (command.equals("listall")) {
+		//1. 보내준것이 있으면 받는다.
+		//2. db에 전달할 것이 있으면 전달한다.
+		//없으면 리턴한다
+		List<MYMemberDto> list = biz.selectAllUser();
+		request.setAttribute("list", list);
+		pageContext.forward("userlistall.jsp");
+		
+	} else if (command.equals("listen")) {
+		//1.
+		//2.
+		List<MYMemberDto> list = biz.selectEnabledUser();
+		request.setAttribute("list", list);
+		pageContext.forward("userlisten.jsp");
+		//3.
+		//4.
+	} else if(command.equals("updateroleform")){
+		int myno = Ineger.parseInt(request.getParameter("myno"));
+	}
+	
+%>
+
+
+
+
+
+
+
+	<h1 style="color: red;"> 잘못왔다....</h1>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

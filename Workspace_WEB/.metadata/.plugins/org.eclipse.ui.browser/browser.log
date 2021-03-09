@@ -1,0 +1,106 @@
+
+2월 08, 2021 15:08:52.643 NEW SESSION
+2월 08, 2021 15:08:52.643 [16148:4072:0208/150852.639:ERROR:device_event_log_impl.cc(211)] [15:08:52.639] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 09, 2021 14:26:34.383 NEW SESSION
+2월 09, 2021 14:26:34.383 [892:6644:0209/142634.380:ERROR:device_event_log_impl.cc(211)] [14:26:34.381] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 09, 2021 14:32:53.194 [12864:13388:0209/143253.193:ERROR:device_event_log_impl.cc(211)] [14:32:53.192] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 09, 2021 15:27:59.621 [6644:11332:0209/152759.621:ERROR:device_event_log_impl.cc(211)] [15:27:59.621] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 09, 2021 15:27:59.622 [6644:11332:0209/152759.621:ERROR:device_event_log_impl.cc(211)] [15:27:59.622] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 15, 2021 13:41:15.520 NEW SESSION
+2월 15, 2021 13:41:15.520 [11620:13232:0215/134115.517:ERROR:device_event_log_impl.cc(211)] [13:41:15.517] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 15, 2021 13:43:31.141 [9360:12540:0215/134331.140:ERROR:device_event_log_impl.cc(211)] [13:43:31.140] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 16, 2021 11:41:05.793 NEW SESSION
+2월 16, 2021 11:41:05.793 [12748:7888:0216/114105.789:ERROR:device_event_log_impl.cc(211)] [11:41:05.790] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 16, 2021 11:41:05.794 [12748:7888:0216/114105.789:ERROR:device_event_log_impl.cc(211)] [11:41:05.790] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 17, 2021 09:10:37.854 NEW SESSION
+2월 17, 2021 09:10:37.854 [4296:7316:0217/091037.847:ERROR:device_event_log_impl.cc(211)] [09:10:37.847] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 17, 2021 11:47:59.263 [4296:7316:0217/114759.262:ERROR:device_event_log_impl.cc(211)] [11:47:59.262] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+2월 17, 2021 15:23:34.203 [14056:11920:0217/152334.203:ERROR:device_event_log_impl.cc(211)] [15:23:34.203] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 17, 2021 19:05:35.749 NEW SESSION
+2월 17, 2021 19:05:35.749 [3480:3856:0217/190535.746:ERROR:device_event_log_impl.cc(211)] [19:05:35.746] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 17, 2021 19:08:00.94 [9064:4428:0217/190800.093:ERROR:device_event_log_impl.cc(211)] [19:08:00.093] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 17, 2021 19:08:00.95 [9064:4428:0217/190800.094:ERROR:device_event_log_impl.cc(211)] [19:08:00.094] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 17, 2021 21:07:38.522 [11796:6988:0217/210738.522:ERROR:device_event_log_impl.cc(211)] [21:07:38.521] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 17, 2021 21:14:01.784 [11344:1796:0217/211401.784:ERROR:device_event_log_impl.cc(211)] [21:14:01.784] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 17, 2021 21:26:09.523 [8476:9980:0217/212609.523:ERROR:device_event_log_impl.cc(211)] [21:26:09.523] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 22, 2021 12:38:52.766 NEW SESSION
+2월 22, 2021 12:38:52.766 [14708:11532:0222/123852.754:ERROR:device_event_log_impl.cc(211)] [12:38:52.755] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 22, 2021 14:46:27.661 [11928:9796:0222/144627.661:ERROR:device_event_log_impl.cc(211)] [14:46:27.660] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 22, 2021 19:03:55.426 NEW SESSION
+2월 22, 2021 19:03:55.426 [16136:12868:0222/190355.422:ERROR:device_event_log_impl.cc(211)] [19:03:55.423] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 22, 2021 19:34:13.734 [11464:16824:0222/193413.732:ERROR:device_event_log_impl.cc(211)] [19:34:13.733] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 22, 2021 19:37:01.99 [9612:6960:0222/193701.098:ERROR:device_event_log_impl.cc(211)] [19:37:01.098] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 22, 2021 19:46:51.721 [15948:9800:0222/194651.721:ERROR:device_event_log_impl.cc(211)] [19:46:51.721] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 23, 2021 15:18:41.925 NEW SESSION
+2월 23, 2021 15:18:41.925 [10324:7056:0223/151841.912:ERROR:device_event_log_impl.cc(211)] [15:18:41.912] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 23, 2021 15:18:41.926 [10324:7056:0223/151841.912:ERROR:device_event_log_impl.cc(211)] [15:18:41.912] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 23, 2021 18:29:42.255 NEW SESSION
+2월 23, 2021 18:29:42.255 [7152:7492:0223/182942.242:ERROR:device_event_log_impl.cc(211)] [18:29:42.242] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 23, 2021 18:33:46.166 [15420:1512:0223/183346.165:ERROR:device_event_log_impl.cc(211)] [18:33:46.166] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 23, 2021 18:34:50.597 [17060:15760:0223/183450.596:ERROR:device_event_log_impl.cc(211)] [18:34:50.596] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 23, 2021 18:43:40.989 [17060:6656:0223/184340.988:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+2월 23, 2021 18:43:58.903 [17060:6656:0223/184358.903:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+2월 23, 2021 18:45:22.09 [17060:6656:0223/184522.008:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+2월 23, 2021 18:54:02.936 NEW SESSION
+2월 23, 2021 18:54:02.936 [5572:12664:0223/185402.933:ERROR:device_event_log_impl.cc(211)] [18:54:02.933] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 23, 2021 19:17:16.747 [5572:17836:0223/191716.745:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+2월 23, 2021 19:18:34.794 [5572:17836:0223/191834.794:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+2월 24, 2021 02:16:51.801 NEW SESSION
+2월 24, 2021 02:16:51.801 [14684:2676:0224/021651.791:ERROR:device_event_log_impl.cc(211)] [02:16:51.791] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 24, 2021 14:00:04.696 NEW SESSION
+2월 24, 2021 14:00:04.696 [15232:19124:0224/140004.694:ERROR:device_event_log_impl.cc(211)] [14:00:04.694] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 24, 2021 14:02:36.371 [16932:12712:0224/140236.371:ERROR:device_event_log_impl.cc(211)] [14:02:36.371] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 24, 2021 14:13:09.404 [19432:19428:0224/141309.404:ERROR:device_event_log_impl.cc(211)] [14:13:09.403] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 24, 2021 15:06:08.608 [2356:3548:0224/150608.607:ERROR:device_event_log_impl.cc(211)] [15:06:08.607] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 24, 2021 15:06:08.608 [2356:3548:0224/150608.607:ERROR:device_event_log_impl.cc(211)] [15:06:08.607] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 25, 2021 09:25:33.382 NEW SESSION
+2월 25, 2021 09:25:33.382 [7488:2864:0225/092533.370:ERROR:device_event_log_impl.cc(211)] [09:25:33.371] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 09:25:33.384 [7488:2864:0225/092533.372:ERROR:device_event_log_impl.cc(211)] [09:25:33.372] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 10:32:32.309 [9356:13308:0225/103232.309:ERROR:device_event_log_impl.cc(211)] [10:32:32.309] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 10:36:21.341 [1172:10564:0225/103621.340:ERROR:device_event_log_impl.cc(211)] [10:36:21.340] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 10:36:21.341 [1172:10564:0225/103621.340:ERROR:device_event_log_impl.cc(211)] [10:36:21.341] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 10:39:00.37 [10820:6424:0225/103900.036:ERROR:device_event_log_impl.cc(211)] [10:39:00.037] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 10:58:27.136 [4172:9356:0225/105827.135:ERROR:device_event_log_impl.cc(211)] [10:58:27.135] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 10:58:27.136 [4172:9356:0225/105827.135:ERROR:device_event_log_impl.cc(211)] [10:58:27.135] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 11:20:00.305 [5464:10968:0225/112000.305:ERROR:device_event_log_impl.cc(211)] [11:20:00.304] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 11:45:31.561 [9816:704:0225/114531.561:ERROR:device_event_log_impl.cc(211)] [11:45:31.560] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 12:33:12.887 [9816:13940:0225/123312.887:ERROR:mcs_client.cc(755)] Received close command, resetting connection.
+
+2월 25, 2021 21:34:42.804 NEW SESSION
+2월 25, 2021 21:34:42.804 [10112:5928:0225/213442.793:ERROR:device_event_log_impl.cc(211)] [21:34:42.793] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 21:38:25.975 [12676:8668:0225/213825.974:ERROR:device_event_log_impl.cc(211)] [21:38:25.974] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 21:46:55.285 [6016:14204:0225/214655.285:ERROR:device_event_log_impl.cc(211)] [21:46:55.285] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 21:46:55.286 [6016:14204:0225/214655.285:ERROR:device_event_log_impl.cc(211)] [21:46:55.285] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 21:54:54.841 [13748:1600:0225/215454.841:ERROR:device_event_log_impl.cc(211)] [21:54:54.841] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 22:09:22.97 [2028:6520:0225/220922.096:ERROR:device_event_log_impl.cc(211)] [22:09:22.096] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 22:09:22.98 [2028:6520:0225/220922.097:ERROR:device_event_log_impl.cc(211)] [22:09:22.097] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 22:11:28.626 [2028:3620:0225/221128.626:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+2월 25, 2021 22:11:34.775 [2028:3620:0225/221134.774:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+2월 25, 2021 22:17:07.73 [9532:6552:0225/221707.072:ERROR:device_event_log_impl.cc(211)] [22:17:07.073] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 25, 2021 23:04:16.505 [10936:12892:0225/230416.505:ERROR:device_event_log_impl.cc(211)] [23:04:16.505] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 26, 2021 01:29:33.158 NEW SESSION
+2월 26, 2021 01:29:33.158 [5992:13604:0226/012933.156:ERROR:device_event_log_impl.cc(211)] [01:29:33.156] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 26, 2021 01:35:32.572 [12336:4008:0226/013532.572:ERROR:device_event_log_impl.cc(211)] [01:35:32.572] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 26, 2021 01:39:30.129 [14372:8276:0226/013930.129:ERROR:device_event_log_impl.cc(211)] [01:39:30.129] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 26, 2021 01:39:30.130 [14372:8276:0226/013930.129:ERROR:device_event_log_impl.cc(211)] [01:39:30.129] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 26, 2021 14:13:44.83 NEW SESSION
+2월 26, 2021 14:13:44.84 [7564:9196:0226/141344.071:ERROR:device_event_log_impl.cc(211)] [14:13:44.071] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+2월 26, 2021 14:33:56.451 [2728:7612:0226/143356.451:ERROR:device_event_log_impl.cc(211)] [14:33:56.451] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+2월 26, 2021 17:34:36.67 NEW SESSION
+2월 26, 2021 17:34:36.67 [3400:11220:0226/173436.064:ERROR:device_event_log_impl.cc(211)] [17:34:36.064] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
