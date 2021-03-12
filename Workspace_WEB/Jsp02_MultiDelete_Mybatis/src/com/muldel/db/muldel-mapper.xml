@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.muldel.mapper">
+
+	<select id="selectList" resultType="MDBoardDto">
+		SELECT SEQ, WRITER, TITLE, CONTENT, REGDATE
+		FROM MDBOARD
+		ORDER BY SEQ DESC
+	</select>
+	
+	<delete id="multiDelete" parameterType="map" >
+		DELETE FROM MDBOARD
+		WHERE SEQ IN
+		<foreach collection="seqs" item="seq" open="(" separator="," close=")">
+			#{seq}
+			<!-- {"seqs" : [45, 47, 48, 49]} seqs가 컬렉션 번호들이 item에 들어간다 -->
+			<!-- 시작할때 오픈 값하나 가져와서 , 값하나 가져와서 , 그다음 닫아주기 클로즈 
+			ex : (45, 47, 48, 49) -->
+		</foreach>
+	</delete>
+	
+
+</mapper>
+
+
+
+
+
+
+
+
+
+

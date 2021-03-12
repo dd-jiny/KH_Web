@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boardmapper">
+
+<resultMap type="myBoardDto" id="myBoardMap">
+	<result property="seq" column="SEQ"/>
+	<result property="writer" column="WRITER"/>
+	<result property="title" column="TITLE"/>
+	<result property="content" column="CONTENT"/>
+	<result property="regdate" column="REGDATE"/>
+
+
+</resultMap>
+
+<!-- config.xml에서 alias 처리 해줘서 resultType을 줄여서 쓸수있다  -->
+  <select id="selectList" resultType="myBoardDto">
+  	SELECT SEQ,WRITER,TITLE,CONTENT,REGDATE
+  	FROM MYBOARD
+  
+  </select>
+  
+  <select id="selectOne" parameterType="int" resultMap="myBoardMap">
+    SELECT SEQ,WRITER,TITLE,CONTENT,REGDATE
+    FROM MYBOARD
+  	WHERE SEQ = #{seq}
+  
+  
+  </select>
+  
+  <insert id="insert" parameterType="myBoardDto">
+   INSERT INTO MYBOARD 
+   VALUES(MYBOARDSEQ.NEXTVAL,#{writer},#{title},#{content},SYSDATE)
+  
+  
+  </insert>
+  
+  <update id="update" parameterType="myBoardDto">
+  UPDATE MYBOARD
+  SET TITLE= #{title},CONTENT= #{content}
+  WHERE SEQ = #{seq}
+  
+  
+  
+  </update>
+  
+  <delete id="delete" parameterType="myBoardDto">
+  DELETE FROM MYBOARD 
+  WHERE SEQ = #{seq}
+  
+  
+  
+  </delete>
+  	
+  
+  
+</mapper>
